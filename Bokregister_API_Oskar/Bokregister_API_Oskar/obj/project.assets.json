@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oskar\\Documents\\GitHub\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\Bokregister_API_Oskar.csproj",
+      "projectUniqueName": "C:\\Users\\Oskar\\Documents\\GitHub\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\Bokregister_API_Oskar.csproj",
       "projectName": "Bokregister_API_Oskar",
-      "projectPath": "C:\\Users\\Oskar\\Documents\\GitHub\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\Bokregister_API_Oskar.csproj",
+      "projectPath": "C:\\Users\\Oskar\\Documents\\GitHub\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\Bokregister_API_Oskar.csproj",
       "packagesPath": "C:\\Users\\Oskar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oskar\\Documents\\GitHub\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\obj\\",
+      "outputPath": "C:\\Users\\Oskar\\Documents\\GitHub\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\Bokregister_API_Oskar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Oskar\\AppData\\Roaming\\NuGet\\NuGet.Config",
