@@ -1,0 +1,6 @@
+@Bokregister_API_Oskar_HostAddress = http://localhost:5215
+
+GET {{Bokregister_API_Oskar_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
