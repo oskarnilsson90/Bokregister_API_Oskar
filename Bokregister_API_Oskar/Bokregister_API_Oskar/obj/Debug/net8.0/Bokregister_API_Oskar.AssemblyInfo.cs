@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bokregister_API_Oskar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3387018864f4d90f7080b4c8350d554a7e5aeb11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0863cf53063f37d6e419e2aa45d7d386d6249997")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bokregister_API_Oskar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bokregister_API_Oskar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
