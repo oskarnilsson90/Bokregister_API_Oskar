@@ -43,13 +43,17 @@ namespace Bokregister_API_Oskar.Controllers
         }
 
         // PUT: api/Books/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBook(int id, Book book)
         {
             if (id != book.Id)
             {
                 return BadRequest();
+            }
+
+            if (book.ISBN.Length != 13)
+            {
+                return BadRequest("ISBN must be 13 characters long.");
             }
 
             _context.Entry(book).State = EntityState.Modified;
@@ -74,10 +78,14 @@ namespace Bokregister_API_Oskar.Controllers
         }
 
         // POST: api/Books
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Book>> PostBook(Book book)
         {
+            if (book.ISBN.Length != 13)
+            {
+                return BadRequest("ISBN must be 13 characters long.");
+            }
+
             _context.Books.Add(book);
             await _context.SaveChangesAsync();
 

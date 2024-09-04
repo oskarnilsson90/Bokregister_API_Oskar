@@ -9,7 +9,12 @@ namespace Bokregister_API_Oskar.Models
 
         [Required]
         public string Title { get; set; }
+
+        [Required]
         public string Author { get; set; }
-        public int ISBN { get; set; }
+
+        [Required]
+        [StringLength(13, MinimumLength = 13, ErrorMessage = "ISBN must be 13 digits long.")]
+        public string ISBN { get; set; }
     }
 }
