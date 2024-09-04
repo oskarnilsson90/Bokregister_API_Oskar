@@ -10,6 +10,6 @@ namespace Bokregister_API_Oskar.Models
         [Required]
         public string Title { get; set; }
         public string Author { get; set; }
-        public string ISBN { get; set; }
+        public int ISBN { get; set; }
     }
 }
