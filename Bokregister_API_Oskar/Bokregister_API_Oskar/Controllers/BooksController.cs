@@ -81,9 +81,15 @@ namespace Bokregister_API_Oskar.Controllers
         [HttpPost]
         public async Task<ActionResult<Book>> PostBook(Book book)
         {
-            if (book.ISBN.Length != 13)
+            // Kontrollera om ISBN redan finns i databasen
+            if (_context.Books.Any(b => b.ISBN == book.ISBN))
             {
-                return BadRequest("ISBN must be 13 characters long.");
+                return Conflict(new { message = "A book with this ISBN already exists." });
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
             }
 
             _context.Books.Add(book);

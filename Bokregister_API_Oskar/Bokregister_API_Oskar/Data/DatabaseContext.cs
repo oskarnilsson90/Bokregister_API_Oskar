@@ -8,5 +8,15 @@ namespace Bokregister_API_Oskar.Data
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options) { }
 
         public DbSet<Book> Books { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Lägg till en unik index för ISBN
+            modelBuilder.Entity<Book>()
+                .HasIndex(b => b.ISBN)
+                .IsUnique();
+        }
     }
 }
